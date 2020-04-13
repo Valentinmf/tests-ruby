@@ -2,7 +2,7 @@ def time_string(sec)
     h = (sec/3600)
     min = (sec%3600)/60
     sec = (sec%3600)%60
-   
+
     if h<10
         h = "0#{h}"
     end
@@ -14,5 +14,5 @@ def time_string(sec)
 end
     "#{h}:#{min}:#{sec}"
 end
- 
+
 puts time_string(gets.chomp.to_i)
